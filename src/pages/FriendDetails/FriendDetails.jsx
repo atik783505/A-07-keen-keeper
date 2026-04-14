@@ -15,7 +15,9 @@ const FriendDetails = () => {
 
     const expectedFriend = friends.find(friend => friend.id === parseInt(id))
     console.log(expectedFriend)
-    const handleCall = useContext(FriendContext)
+    const {handleCall,
+        handleVideo,
+        handleText,} = useContext(FriendContext)
 
     return (
         <div className='bg-[#F8FAFC]'>
@@ -67,12 +69,12 @@ const FriendDetails = () => {
                                 <TbPhoneCall className='text-[24px]'></TbPhoneCall>
                                 <span>Call</span>
                             </button>
-                            <button onClick={() => handleCall(expectedFriend)} className='flex flex-col gap-1 items-center btn h-auto py-2'>
+                            <button onClick={() => handleText(expectedFriend)} className='flex flex-col gap-1 items-center btn h-auto py-2'>
                                 <MdOutlineTextsms className='text-[24px]'></MdOutlineTextsms>
 
                                 <span>Text</span>
                             </button>
-                            <button onClick={() => handleCall(expectedFriend)} className='flex flex-col gap-1 items-center btn h-auto py-2'>
+                            <button onClick={() => handleVideo(expectedFriend)} className='flex flex-col gap-1 items-center btn h-auto py-2'>
                                 <MdOutlineVideocam className='text-[24px]'></MdOutlineVideocam>
                                 <span>Vedio</span>
                             </button>

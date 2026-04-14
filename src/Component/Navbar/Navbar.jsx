@@ -13,7 +13,7 @@ const Navbar = () => {
             <NavLink className={({ isActive }) => `text-[#64748B] mr-4 ${isActive ? 'text-white bg-[#244D3F]' : ""}`} to={'/timeline'}><IoMdTime />Timeline</NavLink>
         </li>
         <li>
-            <NavLink className={({ isActive }) => `text-[#64748B] mr-4 ${isActive ? 'text-white bg-[#244D3F]' : ""}`} to={'/friendetails'}><ImStatsBars />Stats</NavLink>
+            <NavLink className={({ isActive }) => `text-[#64748B] mr-4 ${isActive ? 'text-white bg-[#244D3F]' : ""}`} to={'/stats'}><ImStatsBars />Stats</NavLink>
         </li>
     </>
     return (

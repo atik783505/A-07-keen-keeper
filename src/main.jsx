@@ -7,6 +7,8 @@ import Homepage from './pages/Homepage/Homepage'
 import Timeline from './pages/TImeline/Timeline'
 import FriendDetails from './pages/FriendDetails/FriendDetails'
 import FriendProvider from './Context/FriendContext/FriendProvider'
+import { ToastContainer } from 'react-toastify'
+import Rechart from './pages/Rechart/Rechart'
 
 
 
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
         path:'/frienddetails/:id',
         element:<FriendDetails></FriendDetails>,
         loader:() => fetch('/data.json')
+      },
+      {
+        path:'/stats',
+        element:<Rechart></Rechart>
       }
     ]
   }
@@ -38,6 +44,7 @@ createRoot(document.getElementById('root')).render(
         <RouterProvider router={router}>
 
         </RouterProvider>
+        <ToastContainer></ToastContainer>
     </FriendProvider>
   </StrictMode>,
 )
