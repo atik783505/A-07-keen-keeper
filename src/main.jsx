@@ -6,6 +6,8 @@ import Mainlayout from './Layout/Mainlayout'
 import Homepage from './pages/Homepage/Homepage'
 import Timeline from './pages/TImeline/Timeline'
 import FriendDetails from './pages/FriendDetails/FriendDetails'
+import FriendProvider from './Context/FriendContext/FriendProvider'
+
 
 
 const router = createBrowserRouter([
@@ -32,8 +34,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <FriendProvider>
         <RouterProvider router={router}>
 
         </RouterProvider>
+    </FriendProvider>
   </StrictMode>,
 )

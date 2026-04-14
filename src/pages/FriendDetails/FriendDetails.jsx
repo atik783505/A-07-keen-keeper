@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiArchive } from 'react-icons/fi';
 import { MdOutlineDelete, MdOutlineTextsms, MdOutlineVideocam } from 'react-icons/md';
 import { RiNotificationSnoozeLine } from 'react-icons/ri';
 import { TbPhoneCall } from 'react-icons/tb';
 import { useLoaderData, useParams } from 'react-router';
+import { FriendContext } from '../../Context/FriendContext/FriendProvider';
 
 
 const FriendDetails = () => {
@@ -14,6 +15,7 @@ const FriendDetails = () => {
 
     const expectedFriend = friends.find(friend => friend.id === parseInt(id))
     console.log(expectedFriend)
+    const handleCall = useContext(FriendContext)
 
     return (
         <div className='bg-[#F8FAFC]'>
@@ -61,16 +63,16 @@ const FriendDetails = () => {
                     <div className='bg-white rounded-lg p-3'>
                         <h2 className='text-[#244D3F] mb-4'>Quick Check-In</h2>
                         <div className='grid grid-cols-3 gap-3'>
-                            <button className='flex flex-col gap-1 items-center btn h-auto py-2'>
+                            <button onClick={() => handleCall(expectedFriend)} className='flex flex-col gap-1 items-center btn h-auto py-2'>
                                 <TbPhoneCall className='text-[24px]'></TbPhoneCall>
                                 <span>Call</span>
                             </button>
-                            <button className='flex flex-col gap-1 items-center btn h-auto py-2'>
+                            <button onClick={() => handleCall(expectedFriend)} className='flex flex-col gap-1 items-center btn h-auto py-2'>
                                 <MdOutlineTextsms className='text-[24px]'></MdOutlineTextsms>
 
                                 <span>Text</span>
                             </button>
-                            <button className='flex flex-col gap-1 items-center btn h-auto py-2'>
+                            <button onClick={() => handleCall(expectedFriend)} className='flex flex-col gap-1 items-center btn h-auto py-2'>
                                 <MdOutlineVideocam className='text-[24px]'></MdOutlineVideocam>
                                 <span>Vedio</span>
                             </button>
