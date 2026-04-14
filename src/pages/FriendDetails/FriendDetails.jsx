@@ -1,5 +1,7 @@
 import React from 'react';
-import { MdOutlineTextsms, MdOutlineVideocam } from 'react-icons/md';
+import { FiArchive } from 'react-icons/fi';
+import { MdOutlineDelete, MdOutlineTextsms, MdOutlineVideocam } from 'react-icons/md';
+import { RiNotificationSnoozeLine } from 'react-icons/ri';
 import { TbPhoneCall } from 'react-icons/tb';
 import { useLoaderData, useParams } from 'react-router';
 
@@ -15,18 +17,27 @@ const FriendDetails = () => {
 
     return (
         <div className='bg-[#F8FAFC]'>
-            <div className='flex justify-between container mx-auto py-15'>
-                <div className='text-center flex flex-col items-center w-[350px] bg-white p-2 rounded-lg'>
-                    <img className='w-[90px] h-[90px] rounded-full' src={expectedFriend.picture} alt="" />
-                    <h2>{expectedFriend.name}</h2>
-                    <p className={`badge rounded-full p-3 text-white ${expectedFriend.status === "overdue" ? 'bg-red-600': expectedFriend.status === "on-track" ? 'bg-[#244D3F]': 'bg-[#EFAD44]' }`}>{expectedFriend.status}</p>
-                    <div className='badge bg-green-300 text-green-700'>
-                        {
-                            expectedFriend.tags.map(tag => <span>{tag}</span>)
-                        }
-                    </div>
-                    <p>"{expectedFriend.bio}"</p>
+            <div className='flex justify-between container items-center mx-auto py-15'>
+                <div>
 
+                    <div className='text-center space-y-1 flex flex-col mb-6 items-center w-[350px] bg-white p-2 rounded-lg'>
+                        <img className='w-[90px] h-[90px] rounded-full' src={expectedFriend.picture} alt="" />
+                        <h2>{expectedFriend.name}</h2>
+                        <p className={`badge rounded-full p-3 text-[12px] text-white ${expectedFriend.status === "overdue" ? 'bg-red-600' : expectedFriend.status === "on-track" ? 'bg-[#244D3F]' : 'bg-[#EFAD44]'}`}>{expectedFriend.status}</p>
+                        <div className='flex gap-2'>
+                            {
+                                expectedFriend.tags.map(tag => <span className='text-[12px] badge bg-green-300 text-green-700'>{tag}</span>)
+                            }
+                        </div>
+                        <p className='text-[#64748B]'>"{expectedFriend.bio}"</p>
+                        <p className='text-[#64748B]'>Preferred: {expectedFriend.email}</p>
+
+                    </div>
+                    <div className='space-y-3'>
+                        <button className='bg-white py-[20px] btn text-center rounded-lg border border-gray-300 w-full'><RiNotificationSnoozeLine size='20px' /> Snooze 2 weeks</button>
+                        <button className='bg-white py-[20px] btn text-center rounded-lg border border-gray-300 w-full'><FiArchive /> Archive</button>
+                        <button className='bg-white py-[20px] btn text-center rounded-lg border border-gray-300 w-full text-red-500'><MdOutlineDelete size='20px' /> Delete</button>
+                    </div>
                 </div>
                 <div>
                     <div className='grid grid-cols-3 gap-10'>
