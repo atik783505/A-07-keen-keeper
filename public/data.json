@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    "email": "sarah.j@outlook.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["work", "mentor"],
+    "bio": "Former manager at TechCorp. Guided me through my first junior developer role. Expert in system architecture.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Chen",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    "email": "marcus.vocal@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["hobby", "music"],
+    "bio": "Lead singer in our weekend garage band. We usually practice classic rock covers on Saturdays.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    "email": "elena.design@freelance.io",
+    "days_since_contact": 28,
+    "status": "overdue",
+    "tags": ["college", "best friend"],
+    "bio": "Roommate from sophomore year. Now working as a UX Designer in Madrid. We try to catch up monthly.",
+    "goal": 30,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 4,
+    "name": "David Miller",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "email": "david.miller88@yahoo.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["neighbor", "casual"],
+    "bio": "Lives two doors down. We often swap gardening tips and borrow tools. Very reliable person.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 5,
+    "name": "Aisha Khan",
+    "picture": "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56",
+    "email": "akhan.legal@firm.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["professional", "networking"],
+    "bio": "Corporate lawyer met at the 2025 Fintech Summit. Interested in early-stage startup regulations.",
+    "goal": 60,
+    "next_due_date": "2026-06-10"
+  },
+  {
+    "id": 6,
+    "name": "Liam O'Connor",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+    "email": "liam.fitness@fitnesshub.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["gym", "health"],
+    "bio": "Personal trainer focused on mobility and strength. Keeps me accountable for my 6 AM workouts.",
+    "goal": 3,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 7,
+    "name": "Sophia Wu",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "email": "sophia.wu.travels@icloud.com",
+    "days_since_contact": 85,
+    "status": "overdue",
+    "tags": ["travel", "old friend"],
+    "bio": "Met during a backpacking trip in Thailand. She lives in Seattle now and works for a non-profit.",
+    "goal": 60,
+    "next_due_date": "2026-02-15"
+  },
+  {
+    "id": 8,
+    "name": "James Peterson",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "email": "jpete.photo@studio.net",
+    "days_since_contact": 25,
+    "status": "almost due",
+    "tags": ["creative", "collaborator"],
+    "bio": "Professional photographer. We collaborate on local community projects and art gallery openings.",
+    "goal": 30,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 9,
+    "name": "Dr. Linda Gray",
+    "picture": "https://images.unsplash.com/photo-1559839734-2b71f1536783",
+    "email": "linda.gray@medical.org",
+    "days_since_contact": 150,
+    "status": "overdue",
+    "tags": ["family", "extended"],
+    "bio": "My aunt who lives in Chicago. She's a pediatrician and loves hearing updates about the family.",
+    "goal": 90,
+    "next_due_date": "2026-02-10"
+  },
+  {
+    "id": 10,
+    "name": "Oscar Rivera",
+    "picture": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    "email": "oscar.r@startup.io",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["investor", "work"],
+    "bio": "Angel investor interested in AI. Met at a pitch event. We are currently discussing a seed round.",
+    "goal": 7,
+    "next_due_date": "2026-04-17"
+  }
+]
