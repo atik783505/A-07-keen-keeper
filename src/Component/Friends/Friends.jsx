@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import FriendsCard from '../../ui/Friendscard/FriendsCard';
 
-const dataPromise = fetch('data.json').then(res => res.json())
+const dataPromise = fetch('/data.json').then(res => res.json())
 
 const Friends = () => {
     const friendsData = use(dataPromise)
