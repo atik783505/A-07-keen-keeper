@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext,useState } from 'react';
 import { toast } from 'react-toastify';
 
 
@@ -10,6 +10,7 @@ const FriendProvider = ({ children }) => {
     const [callInfo, setCallInfo] = useState([])
     const [vedioCallInfo, setVideoCallInfo] = useState([])
     const [textInfo, setTextINfo] = useState([])
+    const [filter,setFilter] = useState('all')
     const handleCall = (currenrfriend) => {
         const newData = {...currenrfriend, type:'call'}
         setStoredTimeline([...storedTimeline, newData])
@@ -35,7 +36,9 @@ const FriendProvider = ({ children }) => {
         storedTimeline,
         callInfo,
         vedioCallInfo,
-        textInfo
+        textInfo,
+        filter,
+        setFilter
 
     }
     return (
