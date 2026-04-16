@@ -12,11 +12,18 @@ const Timelinecard = ({ data }) => {
             </div>
             <div>
                 <h2>{data.type} with {data.name}</h2>
-                <p>{new Date().toLocaleDateString('en-US', {
-                    month: 'long',
-                    day: 'numeric',
-                    year: 'numeric'
-                })}</p>
+                <div className='flex gap-2'>
+                    <p>{new Date().toLocaleDateString('en-US', {
+                        month: 'long',
+                        day: 'numeric',
+                        year: 'numeric'
+                    })}</p>
+                    <p>{new Date().toLocaleTimeString('en-US', {
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        hour12: true
+                    })}</p>
+                </div>
             </div>
         </div>
     );

@@ -9,6 +9,7 @@ import FriendDetails from './pages/FriendDetails/FriendDetails'
 import FriendProvider from './Context/FriendContext/FriendProvider'
 import { ToastContainer } from 'react-toastify'
 import Rechart from './pages/Rechart/Rechart'
+import ErrorPage from './pages/Erorr/ErrorPage'
 
 
 
@@ -34,7 +35,8 @@ const router = createBrowserRouter([
         path:'/stats',
         element:<Rechart></Rechart>
       }
-    ]
+    ],
+    errorElement:<ErrorPage></ErrorPage>
   }
 ])
 
@@ -44,7 +46,7 @@ createRoot(document.getElementById('root')).render(
         <RouterProvider router={router}>
 
         </RouterProvider>
-        <ToastContainer></ToastContainer>
+        <ToastContainer position='top-center'></ToastContainer>
     </FriendProvider>
   </StrictMode>,
 )
