@@ -14,7 +14,11 @@ const Timeline = () => {
     const sortedTimeline = [...filteredData].sort((a,b) => {
         const A = new Date(a.entryTime).getTime() || 0
         const B = new Date(b.entryTime).getTime() || 0
-        if(sortedType === 'old-to-new'){
+
+        if(sortedType === 'Default'){
+            return storedTimeline
+        }
+        else if(sortedType === 'old-to-new'){
             return A-B
         }else{
             return B-A
@@ -24,9 +28,9 @@ const Timeline = () => {
     return (
         <div className='bg-[#F8FAFC]'>
             <div className='container mx-auto py-10 '>
-                <div className='flex justify-between items-center'>
-                    <h2 className='text-[48px] font-bold'>Timeline </h2>
-                    <div className='flex gap-2'>
+                <div className='flex flex-wrap justify-between items-center p-3'>
+                    <h2 className='text-[30px] md:text-[48px] font-bold'>Timeline </h2>
+                    <div className='flex gap-0 md:gap-2'>
                         <div className="flex-none z-20">
                             <ul className="menu menu-horizontal px-1">
                                 <li>
@@ -48,6 +52,7 @@ const Timeline = () => {
                                     <details>
                                         <summary>Sort by: {sortedType}</summary>
                                         <ul className="bg-base-100 rounded-t-none p-2">
+                                            <li onClick={() => setSortedType('Default')}><a>Default</a></li>
                                             <li onClick={() => setSortedType('old-to-new')}><a>old-to-new</a></li>
                                             <li onClick={() => setSortedType('new-to-old')}><a>new-to-old</a></li>
                                         </ul>

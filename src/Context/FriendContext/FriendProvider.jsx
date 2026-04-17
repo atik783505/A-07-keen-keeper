@@ -17,21 +17,21 @@ const FriendProvider = ({ children }) => {
         setStoredTimeline([...storedTimeline, newData])
         setCallInfo([...callInfo,currenrfriend])
         addToTimelineLocalDb(newData)
-        toast(`called ${currenrfriend.name}`)
+        toast.success(`Called ${currenrfriend.name}`)
     }
     const handleVideo = (currenrfriend) => {
         const newData = {...currenrfriend, type:'video',entryTime: new Date().toISOString()}
         setStoredTimeline([...storedTimeline, newData])
         setVideoCallInfo([...vedioCallInfo,currenrfriend])
         addToTimelineLocalDb(newData)
-        toast(`called ${currenrfriend.name}`)
+        toast.success(`Video call with ${currenrfriend.name}`)
     }
     const handleText = (currenrfriend) => {
         const newData = {...currenrfriend, type:'text',entryTime: new Date().toISOString()}
         setStoredTimeline([...storedTimeline, newData])
         setTextINfo([...textInfo,currenrfriend])
         addToTimelineLocalDb(newData)
-        toast(`called ${currenrfriend.name}`)
+        toast.success(`Text with ${currenrfriend.name}`)
     }
     const data ={
         handleCall,

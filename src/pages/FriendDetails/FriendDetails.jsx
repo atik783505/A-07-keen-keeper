@@ -21,7 +21,7 @@ const FriendDetails = () => {
 
     return (
         <div className='bg-[#F8FAFC]'>
-            <div className='flex justify-between container items-center mx-auto py-15'>
+            <div className='flex flex-col md:flex-row justify-between container items-center mx-auto py-15 p-2 gap-2'>
                 <div>
 
                     <div className='text-center space-y-1 flex flex-col mb-6 items-center w-[350px] bg-white p-2 rounded-lg'>
@@ -43,19 +43,19 @@ const FriendDetails = () => {
                         <button className='bg-white py-[20px] btn text-center rounded-lg border border-gray-300 w-full text-red-500'><MdOutlineDelete size='20px' /> Delete</button>
                     </div>
                 </div>
-                <div>
-                    <div className='grid grid-cols-3 gap-10'>
-                        <div className='text-center bg-white rounded-lg p-3'>
-                            <h2 className='text-[#244D3F] text-[30px] font-semibold'>{expectedFriend.days_since_contact}</h2>
-                            <p className='text-[#64748B] text=[18px]'>Days Since Contact</p>
+                <div className='w-full max-w-2xl'>
+                    <div className='grid grid-cols-3 gap-2 lg:gap-10'>
+                        <div className='text-center bg-white rounded-lg p-1.5 lg:p-3'>
+                            <h2 className='text-[#244D3F] text-[22px] lg:text-[30px] font-semibold'>{expectedFriend.days_since_contact}</h2>
+                            <p className='text-[#64748B] text-[15px] lg:text=[18px]'>Days Since Contact</p>
                         </div>
-                        <div className='text-center bg-white rounded-lg p-3'>
-                            <h2 className='text-[#244D3F] text-[30px] font-semibold'>{expectedFriend.goal}</h2>
-                            <p className='text-[#64748B] text=[18px]'>Goal (Days)</p>
+                        <div className='text-center bg-white rounded-lg p-1.5 lg:p-3'>
+                            <h2 className='text-[#244D3F] text-[22px] lg:text-[30px] font-semibold'>{expectedFriend.goal}</h2>
+                            <p className='text-[#64748B] text-[15px] lg:text=[18px]'>Goal (Days)</p>
                         </div>
-                        <div className='text-center bg-white rounded-lg p-3'>
-                            <h2 className='text-[#244D3F] text-[30px] font-semibold whitespace-nowrap'>{expectedFriend.next_due_date}</h2>
-                            <p className='text-[#64748B] text=[18px]'>Next Due</p>
+                        <div className='text-center bg-white rounded-lg p-1.5 lg:p-3'>
+                            <h2 className='text-[#244D3F] text-[22px] lg:text-[30px] font-semibold whitespace-nowrap'>{expectedFriend.next_due_date}</h2>
+                            <p className='text-[#64748B] text-[15px] lg:text=[18px]'>Next Due</p>
                         </div>
                     </div>
                     <div className='bg-white rounded-lg my-6 p-2'>
