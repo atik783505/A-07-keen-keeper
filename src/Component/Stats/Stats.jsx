@@ -8,7 +8,7 @@ const Stats = () => {
                 <p className='text-[#64748B] text=[18px]'>Total Friends</p>
             </div>
             <div className='text-center space-y-2'>
-                <h2 className='text-[#244D3F] text-[32px] font-semibold'></h2>
+                <h2 className='text-[#244D3F] text-[32px] font-semibold'>4</h2>
                 <p className='text-[#64748B] text=[18px]'>On Track</p>
             </div>
             <div className='text-center space-y-2'>
