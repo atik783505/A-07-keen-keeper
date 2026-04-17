@@ -9,12 +9,8 @@ import { FriendContext } from '../../Context/FriendContext/FriendProvider';
 
 const FriendDetails = () => {
     const { id } = useParams()
-    console.log('id is', id)
     const friends = useLoaderData()
-    console.log(friends)
-
     const expectedFriend = friends.find(friend => friend.id === parseInt(id))
-    console.log(expectedFriend)
     const {handleCall,
         handleVideo,
         handleText,} = useContext(FriendContext)
