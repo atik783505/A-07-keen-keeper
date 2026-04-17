@@ -44,7 +44,7 @@ const FriendDetails = () => {
                     </div>
                 </div>
                 <div className='w-full max-w-2xl'>
-                    <div className='grid grid-cols-3 gap-2 lg:gap-10 '>
+                    <div className='flex flex-wrap justify-center gap-2 lg:gap-10 '>
                         <div className='text-center bg-white rounded-lg p-1.5 lg:p-3'>
                             <h2 className='text-[#244D3F] text-[22px] lg:text-[30px] font-semibold'>{expectedFriend.days_since_contact}</h2>
                             <p className='text-[#64748B] text-[15px] lg:text=[18px]'>Days Since Contact</p>
