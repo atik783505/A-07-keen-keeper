@@ -1,16 +1,37 @@
-# React + Vite
+# 📱 KeenKeeper - Connect & Track
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**KeenKeeper** is a modern React.js application designed to manage friend interactions and track communication history. It provides a seamless user interface to log activities like calls, video chats, and texts, while offering data-driven insights through visual statistics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Project Overview
+KeenKeeper serves as a personal interaction dashboard. It allows users to maintain a "Timeline" of their social engagements and provides a "Stats" section to visualize their communication patterns using dynamic charts.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Technologies Used
 
-## Expanding the ESLint configuration
+This project leverages a modern web stack for performance and scalability:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js**: Core library for building the component-based User Interface.
+- **React Router DOM**: Handles client-side routing and smooth page navigation.
+- **Tailwind CSS**: Used for rapid, utility-first styling and ensuring a fully responsive layout.
+- **DaisyUI**: A Tailwind CSS component library used for clean and consistent UI elements.
+- **Recharts**: Implemented to render beautiful, interactive data visualizations and activity charts.
+- **React Toastify**: Provides immediate, non-intrusive feedback for user actions.
+- **React Icons**: A comprehensive icon library for enhanced visual cues.
+- **Context API**: Managed global state for friend data and interaction history.
+
+---
+
+## ✨ Key Features
+
+- **Interactive Dashboard**: View a list of friends with quick-action buttons for Calling, Video Chatting, or Texting.
+- **Real-time Timeline**: Automatically logs every interaction with a timestamp and activity type.
+- **Activity Filtering**: Users can filter their timeline history by 'Call', 'Video', or 'Text' to find specific records easily.
+- **Visual Analytics**: A dedicated Stats page featuring **Recharts** to display activity distribution and frequency.
+- **Responsive Design**: Optimized for all screen sizes, from mobile devices to large desktop monitors.
+- **Persistent Data**: Integration with Browser Local Storage ensures that your interaction history remains intact even after a page refresh.
+- **Dynamic Navigation**: Smooth transitions between Home, Timeline, and Stats pages without reloading.
+
+

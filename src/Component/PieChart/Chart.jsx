@@ -6,9 +6,9 @@ import { FriendContext } from '../../Context/FriendContext/FriendProvider';
 const Chart = () => {
     const { callInfo, vedioCallInfo, textInfo } = useContext(FriendContext)
     const data = [
-        { name: 'Call', value: callInfo.length || 0 },
-        { name: 'Text', value: vedioCallInfo.length || 0 },
-        { name: 'Video', value: textInfo.length || 0 },
+        { name: 'Call', value: callInfo || 0 },
+        { name: 'Text', value: vedioCallInfo || 0 },
+        { name: 'Video', value: textInfo || 0 },
     ];
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
     return (

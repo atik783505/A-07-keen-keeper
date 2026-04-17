@@ -1,4 +1,4 @@
-import React, { createContext,useState } from 'react';
+import React, { createContext, useState } from 'react';
 import { toast } from 'react-toastify';
 import { addToTimelineLocalDb, getAllTimelineLocalDb } from '../../utiles/LocalDb';
 
@@ -8,32 +8,35 @@ export const FriendContext = createContext()
 const FriendProvider = ({ children }) => {
 
     const [storedTimeline, setStoredTimeline] = useState(() => getAllTimelineLocalDb())
-    const [callInfo, setCallInfo] = useState([])
-    const [vedioCallInfo, setVideoCallInfo] = useState([])
-    const [textInfo, setTextINfo] = useState([])
-    const [filter,setFilter] = useState('all')
+    // const [callInfo, setCallInfo] = useState([])
+    // const [vedioCallInfo, setVideoCallInfo] = useState([])
+    // const [textInfo, setTextINfo] = useState([])
+    const callInfo = storedTimeline.filter(item => item.type === 'call').length;
+    const vedioCallInfo = storedTimeline.filter(item => item.type === 'video').length;
+    const textInfo = storedTimeline.filter(item => item.type === 'text').length;
+    const [filter, setFilter] = useState('all')
     const handleCall = (currenrfriend) => {
-        const newData = {...currenrfriend, type:'call',entryTime: new Date().toISOString()}
+        const newData = { ...currenrfriend, type: 'call', entryTime: new Date().toISOString() }
         setStoredTimeline([...storedTimeline, newData])
-        setCallInfo([...callInfo,currenrfriend])
+        // setCallInfo([...callInfo,currenrfriend])
         addToTimelineLocalDb(newData)
         toast.success(`Called ${currenrfriend.name}`)
     }
     const handleVideo = (currenrfriend) => {
-        const newData = {...currenrfriend, type:'video',entryTime: new Date().toISOString()}
+        const newData = { ...currenrfriend, type: 'video', entryTime: new Date().toISOString() }
         setStoredTimeline([...storedTimeline, newData])
-        setVideoCallInfo([...vedioCallInfo,currenrfriend])
+        // setVideoCallInfo([...vedioCallInfo,currenrfriend])
         addToTimelineLocalDb(newData)
         toast.success(`Video call with ${currenrfriend.name}`)
     }
     const handleText = (currenrfriend) => {
-        const newData = {...currenrfriend, type:'text',entryTime: new Date().toISOString()}
+        const newData = { ...currenrfriend, type: 'text', entryTime: new Date().toISOString() }
         setStoredTimeline([...storedTimeline, newData])
-        setTextINfo([...textInfo,currenrfriend])
+        // setTextINfo([...textInfo,currenrfriend])
         addToTimelineLocalDb(newData)
         toast.success(`Text with ${currenrfriend.name}`)
     }
-    const data ={
+    const data = {
         handleCall,
         handleVideo,
         handleText,
