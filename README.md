@@ -1,37 +1,109 @@
 # 📱 KeenKeeper - Connect & Track
 
-**KeenKeeper** is a modern React.js application designed to manage friend interactions and track communication history. It provides a seamless user interface to log activities like calls, video chats, and texts, while offering data-driven insights through visual statistics.
+**KeenKeeper** is a modern React.js application designed to manage friend interactions and track communication history. It provides a seamless user interface to log activities like calls, video chats, and texts while offering data-driven insights through visual statistics.
 
 ---
 
-## 🚀 Project Overview
-KeenKeeper serves as a personal interaction dashboard. It allows users to maintain a "Timeline" of their social engagements and provides a "Stats" section to visualize their communication patterns using dynamic charts.
+## 🚀 Live Demo
+
+🌐 **Live Website:** https://a-07-keen-keeper-ten.vercel.app/
+
+📂 **GitHub Repository:** https://github.com/atik783505/keenkeeper
+
+---
+
+## 📖 Project Overview
+
+KeenKeeper is a personal interaction dashboard that helps users manage and track their communication with friends. Users can perform quick actions such as calling, video chatting, and texting while automatically maintaining a timeline of interactions. The application also provides visual analytics to better understand communication patterns.
 
 ---
 
 ## 🛠 Technologies Used
 
-This project leverages a modern web stack for performance and scalability:
-
-- **React.js**: Core library for building the component-based User Interface.
-- **React Router DOM**: Handles client-side routing and smooth page navigation.
-- **Tailwind CSS**: Used for rapid, utility-first styling and ensuring a fully responsive layout.
-- **DaisyUI**: A Tailwind CSS component library used for clean and consistent UI elements.
-- **Recharts**: Implemented to render beautiful, interactive data visualizations and activity charts.
-- **React Toastify**: Provides immediate, non-intrusive feedback for user actions.
-- **React Icons**: A comprehensive icon library for enhanced visual cues.
-- **Context API**: Managed global state for friend data and interaction history.
+- React.js
+- React Router DOM
+- Tailwind CSS
+- DaisyUI
+- Recharts
+- React Toastify
+- React Icons
+- Context API
+- Browser Local Storage
 
 ---
 
-## ✨ Key Features
+## ✨ Core Features
 
-- **Interactive Dashboard**: View a list of friends with quick-action buttons for Calling, Video Chatting, or Texting.
-- **Real-time Timeline**: Automatically logs every interaction with a timestamp and activity type.
-- **Activity Filtering**: Users can filter their timeline history by 'Call', 'Video', or 'Text' to find specific records easily.
-- **Visual Analytics**: A dedicated Stats page featuring **Recharts** to display activity distribution and frequency.
-- **Responsive Design**: Optimized for all screen sizes, from mobile devices to large desktop monitors.
-- **Persistent Data**: Integration with Browser Local Storage ensures that your interaction history remains intact even after a page refresh.
-- **Dynamic Navigation**: Smooth transitions between Home, Timeline, and Stats pages without reloading.
+- 📋 Manage friends through an interactive dashboard.
+- 📞 Track calls, video chats, and text messages with automatic timeline updates.
+- 🕒 View communication history with timestamps.
+- 🔍 Filter activities by Call, Video, or Text.
+- 📊 Analyze communication patterns through interactive charts.
+- 💾 Store interaction history using Browser Local Storage.
+- 📱 Fully responsive design for mobile, tablet, and desktop.
+- ⚡ Fast client-side routing with React Router DOM.
+
+---
+
+## 📦 Dependencies
+
+### Main Packages
+
+- react
+- react-dom
+- react-router-dom
+- tailwindcss
+- daisyui
+- recharts
+- react-toastify
+- react-icons
+
+---
+
+## 💻 Run the Project Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/atik783505/keenkeeper.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd keenkeeper
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+### 5. Open your browser
+
+```
+http://localhost:5173
+```
+
+---
 
 
+---
+
+## 🔗 Resources
+
+- 🌐 Live Website: https://a-07-keen-keeper-ten.vercel.app/
+- 📂 GitHub Repository: https://github.com/atik783505/keenkeeper
+
+---
+
+## 👨‍💻 Author
+
+**Atikur Rahman**
